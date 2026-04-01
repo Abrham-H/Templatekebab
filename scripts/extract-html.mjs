@@ -12,7 +12,6 @@ const style = styleMatch[1].trim();
 
 let body = html.match(/<body>([\s\S]*?)<\/body>/)[1];
 body = body.replace(/<script>[\s\S]*?<\/script>/, "").trim();
-body = body.replace(/src="logo\.png"/g, 'src="/logo.png"');
 
 fs.mkdirSync(path.join(root, "app"), { recursive: true });
 fs.mkdirSync(path.join(root, "lib"), { recursive: true });

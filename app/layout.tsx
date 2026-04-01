@@ -6,15 +6,14 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Zermatt Kebab House — Winterthur",
+  title: "Kebab — Musterwebsite (Platzhalter)",
   description:
-    "Zermatt Kebab House in Winterthur – authentic kebabs crafted with fire and soul. Family-run since 2010.",
+    "Musterwebsite für ein Kebab-Restaurant: Layout und Beispieltexte ohne echten Betrieb oder Markenlogo.",
   openGraph: {
-    title: "Zermatt Kebab House — Winterthur",
+    title: "Kebab — Musterwebsite (Platzhalter)",
     description:
-      "Dark, cinematic kebab restaurant in Winterthur. Crafted with fire & soul.",
+      "Demonstrations-Layout: kein echtes Restaurant, keine echten Kontaktdaten.",
     type: "website",
-    images: [{ url: "/logo.png" }],
   },
   twitter: {
     card: "summary_large_image",

@@ -28,50 +28,61 @@
       font-family: "Cormorant Garamond", Georgia, serif;
     }
 
-    /* ----- Logo utility ----- */
-    .logo-img {
-      object-fit: contain;
-      object-position: left center;
-      flex-shrink: 0;
+    /* ----- Wordmark (Musterwebsite, no logo image) ----- */
+    .wordmark {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--warm-white);
+      line-height: 1.15;
     }
-    .logo-img--nav {
-      height: 48px;
-      width: auto;
-      aspect-ratio: 5 / 2;
+    .wordmark--nav {
+      font-size: 1.35rem;
     }
-    .logo-img--hero {
-      height: 160px;
-      width: auto;
-      max-width: 90vw;
+    .wordmark--nav .wordmark__sub {
+      display: block;
+      font-size: 0.62rem;
+      font-family: Inter, system-ui, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 0.2rem;
+    }
+    .wordmark--about {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      text-align: center;
+    }
+    .wordmark--about .wordmark__sub {
+      display: block;
+      font-size: 0.75rem;
+      font-family: Inter, system-ui, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 0.5rem;
+    }
+    .wordmark--footer {
+      font-size: 1.15rem;
+      opacity: 0.9;
       margin-inline: auto;
-      aspect-ratio: 5 / 2;
     }
-    .logo-img--about {
-      height: clamp(140px, 22vw, 220px);
-      width: auto;
-      margin-inline: auto;
-    }
-    .logo-img--footer {
-      height: 40px;
-      width: auto;
-      margin-inline: auto;
-      opacity: 0.6;
-    }
-    .logo-on-dark {
-      mix-blend-mode: multiply;
-      background: transparent;
+    .wordmark--footer .wordmark__sub {
+      display: block;
+      font-size: 0.65rem;
+      font-family: Inter, system-ui, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.35rem;
     }
     .nav,
     .hero,
     .about__logo-box,
     .footer {
       isolation: isolate;
-    }
-    @media (max-width: 767px) {
-      .logo-img--hero { height: 120px; }
-    }
-    @media (max-width: 479px) {
-      .logo-img--hero { height: 80px; }
     }
 
     /* ----- Navbar ----- */
@@ -549,7 +560,7 @@
       position: relative;
       overflow: hidden;
     }
-    .about__deco-z {
+    .about__deco-letter {
       position: absolute;
       top: 10%;
       right: -5%;
